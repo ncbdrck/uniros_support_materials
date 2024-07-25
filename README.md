@@ -5,7 +5,7 @@ This repository contains the support materials for the `UniROS` framework which 
 - Corresponding Real-world environments - Made with [RealROS](https://github.com/ncbdrck/realros)
 - Stable Baselines3 Support for the ROS-based environments - Made with [SB3_ROS_Support](https://github.com/ncbdrck/sb3_ros_support)
 
-Since the `UniROS` which contains the `MultiROS` and `RealROS` repositories support both `OpenAI Gym `and  `Gymnasium`, the support materials are also made to be compatible with them.
+Since the `UniROS` which contains the `MultiROS` and `RealROS` repositories support both [OpenAI Gym](https://github.com/openai/gym) and  [Gymnasium](https://github.com/Farama-Foundation/Gymnasium), the support materials are also made to be compatible with them.
 
 For the installation and usage of the `UniROS` framework, please refer to the [UniROS](https://github.com/ncbdrck/UniROS) repository.
 
