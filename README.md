@@ -35,6 +35,7 @@ All the Simulated and Real-world environments made to be compatible with the `Gy
 cd ~/catkin_ws/src
 git clone https://github.com/ncbdrck/rl_environments.git
 git clone https://github.com/ncbdrck/rl_training_validation.git
+git clone https://github.com/ncbdrck/multi_task_td3_her.git
 ```
 
 **Note:**
