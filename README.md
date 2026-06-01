@@ -34,6 +34,7 @@ training scripts.
 |---|---|
 | [rl_environments](https://github.com/ncbdrck/rl_environments) | Pre-built `gymnasium` environments. Currently covers RX200, Ned2, VX300S, UR5e — 54 registered env IDs across reach / push / pick-and-place tasks, both sim and real. |
 | [rl_training_validation](https://github.com/ncbdrck/rl_training_validation) | Working training and validation scripts for the pre-built envs. Includes a multi-task training script that trains jointly across sim and real. |
+| [vx300s_mujoco_envs](https://github.com/ncbdrck/vx300s_mujoco_envs) | Experimental ViperX-300 S environments on the in-progress MuJoCo backend (`mujoco_ros_pkgs`). Validates the MuJoCo backend end-to-end on reach / push / pick-and-place (plus goal-conditioned variants). |
 
 ### Per-robot description-extras helpers
 
@@ -107,11 +108,16 @@ sb3_ros_support, and follow the install instructions in
 
 ## Status
 
-- **Sim envs**: registered and tested in Gazebo across all four
-  robots and three tasks.
+- **Sim envs**: registered and configured in Gazebo across all four
+  robots and three tasks. The RX200 reach path is the most-exercised
+  end-to-end; the other (robot × task) combinations are in the testing
+  queue.
 - **Real envs**: registered; hardware validation in progress (the
   RX200 reach path is the most-exercised; the others are in the
   testing queue).
+- **Experimental MuJoCo backend**: a parallel MuJoCo backend for
+  MultiROS is in active development on the `feature/mujoco-backend`
+  branch, with `vx300s_mujoco_envs` as the worked example.
 - **Documentation**: Sphinx + Read the Docs at
   [uniros.readthedocs.io](https://uniros.readthedocs.io/), including
   per-env reference pages following the Gymnasium-Robotics layout.
