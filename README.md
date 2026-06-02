@@ -34,7 +34,7 @@ training scripts.
 |---|---|
 | [rl_environments](https://github.com/ncbdrck/rl_environments) | Pre-built `gymnasium` environments. Currently covers RX200, Ned2, VX300S, UR5e — 54 registered env IDs (48 core task envs plus extra Kinect/ZED2 sensor variants for RX200) across reach / push / pick-and-place tasks, both sim and real. |
 | [rl_training_validation](https://github.com/ncbdrck/rl_training_validation) | Working training and validation scripts for the pre-built envs. Includes a multi-task training script that trains jointly across sim and real. |
-| [vx300s_mujoco_envs](https://github.com/ncbdrck/vx300s_mujoco_envs) | Experimental ViperX-300 S environments on the in-progress MuJoCo backend (`mujoco_ros_pkgs`). Validates the MuJoCo backend end-to-end on reach / push / pick-and-place (plus goal-conditioned variants). |
+| [vx300s_mujoco_envs](https://github.com/ncbdrck/vx300s_mujoco_envs) | Experimental ViperX-300 S environments on the in-progress MuJoCo backend (`mujoco_ros_pkgs`). Exercises the MuJoCo backend across reach / push / pick-and-place (plus goal-conditioned variants); not yet validated end-to-end on hardware. |
 
 ### Per-robot description-extras helpers
 
