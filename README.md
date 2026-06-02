@@ -32,7 +32,7 @@ training scripts.
 
 | Repo | Role |
 |---|---|
-| [rl_environments](https://github.com/ncbdrck/rl_environments) | Pre-built `gymnasium` environments. Currently covers RX200, Ned2, VX300S, UR5e — 54 registered env IDs across reach / push / pick-and-place tasks, both sim and real. |
+| [rl_environments](https://github.com/ncbdrck/rl_environments) | Pre-built `gymnasium` environments. Currently covers RX200, Ned2, VX300S, UR5e — 54 registered env IDs (48 core task envs plus extra Kinect/ZED2 sensor variants for RX200) across reach / push / pick-and-place tasks, both sim and real. |
 | [rl_training_validation](https://github.com/ncbdrck/rl_training_validation) | Working training and validation scripts for the pre-built envs. Includes a multi-task training script that trains jointly across sim and real. |
 | [vx300s_mujoco_envs](https://github.com/ncbdrck/vx300s_mujoco_envs) | Experimental ViperX-300 S environments on the in-progress MuJoCo backend (`mujoco_ros_pkgs`). Validates the MuJoCo backend end-to-end on reach / push / pick-and-place (plus goal-conditioned variants). |
 
@@ -116,18 +116,18 @@ sb3_ros_support, and follow the install instructions in
   RX200 reach path is the most-exercised; the others are in the
   testing queue).
 - **Experimental MuJoCo backend**: a parallel MuJoCo backend for
-  MultiROS is in active development on the `feature/mujoco-backend`
-  branch, with `vx300s_mujoco_envs` as the worked example.
+  MultiROS is in active development (not yet in a stable release),
+  with `vx300s_mujoco_envs` as the worked example. See the UniROS
+  MuJoCo backend guide for install steps.
 - **Documentation**: Sphinx + Read the Docs at
   [uniros.readthedocs.io](https://uniros.readthedocs.io/), including
   per-env reference pages following the Gymnasium-Robotics layout.
 
-## To-do
+## Roadmap
 
-- [ ] Complete real-hardware validation for VX300S, Ned2, and UR5e
-      across push and pick-and-place tasks.
-- [ ] Remote-env mode for the Docker image (env in container,
-      learner on host) so users on modern Python / CUDA can train
-      against the pinned ROS Noetic stack. See the Docker docs
-      page for status.
-- [ ] ROS 2 port. Long-term; current framework targets ROS Noetic.
+- Complete real-hardware validation for VX300S, Ned2, and UR5e
+  across push and pick-and-place tasks.
+- Remote-env mode for the Docker image (env in container, learner
+  on host) so users on modern Python / CUDA can train against the
+  pinned ROS Noetic stack. See the Docker docs page for status.
+- ROS 2 port. Long-term; current framework targets ROS Noetic.
